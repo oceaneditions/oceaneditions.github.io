@@ -8,13 +8,19 @@
 
 body {
   font-family: "Times New Roman", Times, serif;
-  /*your style rules go in here */
   margin: 0;
-  background-color: beige;
+  background-color: rgb(255, 255, 255);
 }
 
 header {
   background-color: black;
+  position: fixed;
+  width: 100%;
+}
+
+.logo{
+  position: fixed;
+  left: 0%;
 }
 
 h1{
@@ -29,23 +35,27 @@ h1{
   font-weight: lighter;
 }
 
-.playtitle {
-  border:1px solid red;
-  background-image: url(../images/coverplay.jpg);
+.firstone {
+  display: block;
+  border: 1px solid;
   height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.3)), url(../images/coverplay.jpg);
   background-position: 60%;
-  background-size: 110%;
-
+  background-size: 80%;
+  opacity: 100%;
 }
 
-.intro{
+.firstone h1{
+  margin-top: 240px;
+}
+
+.break{
   width: 100%;
   max-width: 700px;
   margin-top: 12px;
   margin-left: auto;
   margin-right: auto;
   padding: 2em;
-  border: 0;
   }
 
 .info {
@@ -55,8 +65,8 @@ h1{
   margin-top: 12px;
   margin-left: auto;
   margin-right: auto;
-  padding: 2em;
-  border: 0;
+  padding: 4em;
+  border: 1px solid rgb(85, 115, 168);
 }
 
 figure {
@@ -70,6 +80,22 @@ img {
   display: block;
   width: 80%;
   margin: 0 auto;
+}
+
+.facts{
+    width: 80%;
+    max-width: 700px;
+    background-color: white;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    border: 1px solid rgb(85, 115, 168);
+}
+
+h3{
+  text-align: center;
+  font-weight: bold;
 }
 
 p{
@@ -101,6 +127,8 @@ footer {
   text-align: center;
   width: 100%;
   color: black;
+  padding-top: 100px;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 600px){
